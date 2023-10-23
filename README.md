@@ -29,3 +29,11 @@ python3.8 -m venv <path_destino>/<nombre_del_ambiente>
 source <path_destino>/<nombre_del_ambiente>/bin/activate
 ```
 
+
+## ¿Como funciona?
+
+Primer partimos de la especificación en SOFL (CDFD y su modulo asociado)
+
+![CDFD del ATM](https://raw.githubusercontent.com/jaggcv/Imagenes/main/SOFL_FIGURES/09_SOFL_FIGURES_ISSUESOFSOFL/EXAMPLE_ATM_EXTERNAL_PROCESS.png)
+
+despues creamos las funciones en python que representan a cada uno de los procesos, despues utilizando la libreria PySide2 y la aplicación de QTCreator, se crea la interfaz de usuario, para posteriormente conectar cada una de los *signals and slots*, correspondiente al comportamiento esperado.
